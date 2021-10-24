@@ -1,3 +1,6 @@
+
+时间复杂度为O（n），空间复杂度为O（1）
+
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -29,13 +32,13 @@ huiwen(string s)
 			is=false;
 
 		}
-}   cout<<"���Ʒ���"<<endl<<(is?"Yes":"No")<<endl;
+}   cout<<"µÝÍÆ·¨£º"<<endl<<(is?"Yes":"No")<<endl;
  } 
  int main(int argc, char** argv)
  {
  	string s;
  	cin>>s;
- 	cout<<"�ݹ鷨��"<<endl<<huiwen2(s)<<endl; 
+ 	cout<<"µÝ¹é·¨£º"<<endl<<huiwen2(s)<<endl; 
     cout<<huiwen(s); 
 	return 0;
  }
