@@ -3,12 +3,12 @@ using namespace std;
 int main()
 {
 	int n;int i;int sum=1;
-	cout<<"  µİÍÆ·¨"<<endl<<"ÇëÊäÈën£º";
+	cout<<"  é€’æ¨æ³•"<<endl<<"è¯·è¾“å…¥nï¼š";             //æ—¶é—´å¤æ‚åº¦ä¸ºO(n),ç©ºé—´å¤æ‚åº¦ä¸ºO(1)
 	cin>>n;
 	for(i=1;i<=n;i++){
 		sum*=i;
 	} 
-	cout<<n<<"µÄ½×³ËÎª"<<sum;
+	cout<<n<<"çš„é˜¶ä¹˜ä¸º"<<sum;
 	return 0;
  } 
 //int sum(int n)
@@ -22,8 +22,8 @@ int main()
 //}
 //int main()
 //{
-//	cout<<"  µİ¹é·¨"<<endl<<"ÇëÊäÈën£º"; 
+//	cout<<"  é€’å½’æ³•"<<endl<<"è¯·è¾“å…¥nï¼š"; 
 //	int n;
 //	cin>>n;
-//	cout<<n<<"µÄ½×³ËÎª"<<sum(n); 
+//	cout<<n<<"çš„é˜¶ä¹˜ä¸º"<<sum(n); 
 //}
