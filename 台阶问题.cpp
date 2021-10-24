@@ -1,3 +1,7 @@
+
+最好时间复杂度为O(1),最坏时间复杂度为O(n),空间复杂度为O(1)
+最好的情况是只执行一次就成功退出，所以时间复杂度为O(1),最坏情况则是要反复检索n次才能成功，所以最坏时间复杂度为O(n),每次检索所需要的内存空间为1，所以空间复杂度为O(1)
+
 #include<iostream>
 using namespace std;
 //int f(int n)
@@ -14,10 +18,10 @@ using namespace std;
 //int main()
 //{
 //	int n;
-//	cout<<" �ݹ鷨"<<endl; 
-//	cout<<"������̨������"; 
+//	cout<<" 递归法"<<endl; 
+//	cout<<"请输入台阶数："; 
 //	cin>>n;
-//	cout<<"      һ���� "<<f(n)<<" ���߷�";
+//	cout<<"      一共有 "<<f(n)<<" 种走法";
 //	return 0;
 //}
 int main(){
@@ -25,12 +29,12 @@ int main(){
     f[1]=1;
     f[2]=2;
     int n;
-    cout<<" ���Ʒ�      "<<endl; 
-    cout<<"������̨������"; 
+    cout<<" 递推法      "<<endl; 
+    cout<<"请输入台阶数："; 
     while(scanf("%d",&n)!=EOF){
     for(int i=3;i<=n;i++){
         f[i]=f[i-1]+f[i-2];
     }
-        cout<<"һ���� "<<f[n]<<" ���߷�"<<endl;
+        cout<<"一共有 "<<f[n]<<" 种走法"<<endl;
   }
 }
