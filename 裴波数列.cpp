@@ -1,3 +1,6 @@
+
+时间复杂度为O（n），空间复杂度为O（1）
+
 #include<iostream>
 #include<stdio.h>
 using namespace std;
@@ -21,14 +24,14 @@ int pei1(int n)
  {
  	int n;
     cin>>n;
-    cout<<"�ݹ鷨��"<<endl; 
+    cout<<"µÝ¹é·¨£º"<<endl; 
     for(int i=1;i<=n;i++){ 
     	printf("%-5d",pei(i));
     	if(i%10==0){
     		cout<<endl;
 		}
 	}
-	cout<<endl<<"���Ʒ���"<<endl;
+	cout<<endl<<"µÝÍÆ·¨£º"<<endl;
 	for(int i=1;i<=n;i++){
     	printf("%-5d",pei1(i));
     	if(i%10==0){
